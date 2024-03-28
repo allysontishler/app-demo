@@ -10,6 +10,26 @@ const book = {
   height: '378'
 };
 
+function Bookshelf() {
+  return(
+    <div>
+      <h2>{book.title} ({book.published})</h2>
+      <p>{book.author}</p>
+      <img
+        className="bookCover"
+        src={book.image}
+        art={book.title + ' cover'}
+        style={{
+          width: book.width,
+          height: book.height
+        }}
+      />  
+    </div>
+  );
+}
+
+
+
 function MagicButton() {
   return (
     <div>
