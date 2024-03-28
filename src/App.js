@@ -1,6 +1,28 @@
 
 import './App.css';
 
+const magazines = [
+  { id: 1, title: 'Architectural Digest', theme: 'architecture', isAvailable: true },
+  { id: 2, title: 'Dwell', theme: 'architecture', isAvailable: true },
+  { id: 3, title: 'Communication Arts', theme: 'design', isAvailable: false },
+];
+
+function ZineRack() {
+  const listZines = magazines.map(zine =>
+    <li
+      key={zine.id}
+      style={{
+        color: zine.isAvailable ? 'red' : 'green'
+      }}
+    >
+      {zine.title}
+    </li>
+    );
+    return (
+      <ul>{listZines}</ul>
+    )  
+}
+
 const book = {
   title: 'A Farewell to Arms',
   author: 'Earnest Hemingway',
@@ -32,6 +54,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <ZineRack />
         <Bookshelf />
       </header>
     </div>
