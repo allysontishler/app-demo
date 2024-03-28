@@ -50,12 +50,22 @@ function Bookshelf() {
   );
 }
 
+function MagicButton() {
+  return (
+    <div>
+      <h3>This is a magic button</h3>
+      <button>Magic</button>
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <ZineRack />
         <Bookshelf />
+        <MagicButton />
       </header>
     </div>
   );
