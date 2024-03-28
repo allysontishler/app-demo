@@ -2,10 +2,10 @@
 import './App.css';
 
 const book = {
-  title: 'A Farwell to Arms',
+  title: 'A Farewell to Arms',
   author: 'Earnest Hemingway',
   published: '1929',
-  image: 'https://upload.wikimedia.org/wikipedia/en/4/48/Hemingway_farwell.png',
+  image: 'https://upload.wikimedia.org/wikipedia/en/4/48/Hemingway_farewell.png',
   width: '264',
   height: '378'
 };
