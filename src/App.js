@@ -1,7 +1,7 @@
 
 import './App.css';
 
-const magazines = [
+const bookoptions = [
   { id: 1, title: 'The Courage to Be Disliked', theme: 'non-fiction', isAvailable: true },
   { id: 2, title: 'The Science Behind Karoake Machines', theme: 'non-fiction', isAvailable: true },
   { id: 3, title: 'In Order to Live', theme: 'non-fiction', isAvailable: false },
@@ -9,19 +9,19 @@ const magazines = [
   { id: 5, title: 'Almond', theme: 'fiction', isAvailable: true },
 ];
 
-function ZineRack() {
-  const listZines = magazines.map(zine =>
+function BookRack() {
+  const listBooks = bookoptions.map(read =>
     <li
-      key={zine.id}
+      key={read.id}
       style={{
-        color: zine.isAvailable ? 'green' : 'red'
+        color: read.isAvailable ? 'green' : 'red'
       }}
     >
-      {zine.title}
+      {read.title}
     </li>
     );
     return (
-      <ul>{listZines}</ul>
+      <ul>{listBooks}</ul>
     )  
 }
 
@@ -54,7 +54,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Library />
-        <ZineRack />
+        <BookRack />
         <GetStartedButton />
       </header>
     </div>
