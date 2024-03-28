@@ -18,23 +18,12 @@ function Bookshelf() {
       <img
         className="bookCover"
         src={book.image}
-        art={book.title + ' cover'}
+        alt={book.title + ' cover'}
         style={{
           width: book.width,
           height: book.height
         }}
       />  
-    </div>
-  );
-}
-
-
-
-function MagicButton() {
-  return (
-    <div>
-      <h3>This is a magic button</h3>
-      <button>Magic</button>
     </div>
   );
 }
