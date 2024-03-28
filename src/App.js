@@ -23,8 +23,8 @@ function App() {
         >
           Learn React with Ally and MSU
         </a>
+        <MagicButton />
       </header>
-      <MagicButton />
     </div>
   );
 }
