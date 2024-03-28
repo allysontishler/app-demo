@@ -43,8 +43,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
-        <MagicButton />
+        <Bookshelf />
       </header>
     </div>
   );
